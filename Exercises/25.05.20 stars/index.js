@@ -13,15 +13,14 @@ let wordArg = args[1];
 const print = (stars = 10, word = "Hi") => {
   if (starsArg == undefined || wordArg == undefined) {
     starsDefault = "*".repeat(stars);
-    wordDefault = word;
-    return `${starsDefault} \n${wordDefault} \n${starsDefault}`;
+    return `${starsDefault} \n${word} \n${starsDefault}`;
   } else {
     starsPrint = "*".repeat(starsArg);
     wordPrint = wordArg;
     return `${starsPrint}\n${wordPrint} \n${starsPrint}`;
   }
 };
-//console.log(print());
+console.log(print());
 
 
 //---------------------!!!!-------------------
