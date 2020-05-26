@@ -3,6 +3,20 @@
 // If no stars or no header are passed to the function, the function should print out 10 stars and the word Hey to the
 // console by default.
 
+
+
+
+///////<<<<<-----V1----->>>>>
+// const print = require('./stars');
+// const args = process.argv.slice(2);
+// print(args[0],args[1]);
+
+// module.exports = (stars = 10, header = 'Hey')=>{
+//   console.log(`${'*'.repeat(stars)} \n ${header} \n${'*'.repeat(stars)} `)
+// }
+
+
+///////<<<<<-----V2----->>>>>
 const args = process.argv.slice(2);
 // args.forEach((item, i) => {
 //     console.log(`${i}:${item}`);
