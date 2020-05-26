@@ -18,6 +18,7 @@ function sum(numArray) {
 function avg(numArray) {
   return sum(numArray) / numArray.length;
 }
+
 function mid(numArray) {
   let sortedArr = numArray.sort((a,b) => a-b); //here we sort the array
   console.log(sortedArr);
