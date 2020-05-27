@@ -18,7 +18,7 @@ const data = fs.readFileSync('longText.txt');
 console.log(data.toString());
 console.log("Done \u2714");
 
-fs.open('new.txt', 'w', (err, data)=>{
+fs.open('new.txt', 'r', (err, data)=>{
     if (err) throw err;
     console.log(data.toString());
     console.log("doneeeeeee")
