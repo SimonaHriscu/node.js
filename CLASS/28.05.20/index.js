@@ -12,9 +12,12 @@ if (args.includes("--help")) {
   showHelp();
 }
 
+// let joinedArr = args.toString(""); //here no more space
+// let str = joinedArr.trim();
 let joinedArr = args.join(" "); //here no more space
 let str = joinedArr;
 console.log(`                 ${prepareString(str)}`);
+
 
 
 /*
