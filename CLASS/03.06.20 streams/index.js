@@ -18,4 +18,4 @@ newWriter.on("pipe", () => {
   console.log("cool something is piped in");
 });
 
-let reader = fs.createReadStream("newText.txt").pipe(newWriter);
+let reader = fs.createReadStream("newText.txt").pipe(newWriter); //we can only use pipe from a readable stream to a writable stream ;
