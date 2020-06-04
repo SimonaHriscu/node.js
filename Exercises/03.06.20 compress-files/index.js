@@ -50,3 +50,21 @@ if (args[0] === undefined) {
   myReadStreamArg.pipe(gzip).pipe(myWriteStreamArg);
   console.log("File from argument compressed");
 }
+
+
+//version 2
+
+// const fs = require("fs");
+// const zlib = require("zlib");
+// const path = require("path");
+
+// //console.log(__dirname);
+
+// const [filePath = path.join(__dirname, "input.txt")] = process.argv.slice(2); // ['index.txt','Hi','cool']
+
+// const stream = fs
+//   .createReadStream(filePath)
+//   .pipe(zlib.createGzip())
+//   .pipe(fs.createWriteStream(filePath + ".gz"));
+
+// stream.on("close", () => console.log("Done 👍🏻"));
