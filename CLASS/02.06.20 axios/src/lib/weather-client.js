@@ -4,7 +4,7 @@ const url = require("url");
 
 class OpenWeatherClient {
   constructor(apiKey) {
-    this.apiKey = apiKey;
+    this.apiKey = apiKey.apiKey;
     this.baseUrl = "http://api.openweathermap.org/data/2.5/";
   }
   get(endpoint) {
